@@ -1,1 +1,1 @@
-console.log("Esto es un archivo simple de JS, con un push")
+console.log("Esto es un archivo simple de JS")
