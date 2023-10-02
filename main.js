@@ -1,1 +1,1 @@
-console.log("Esto es un archivo simple de JS")
+console.log("Primera practica - Curso HTML & JavaScript")
