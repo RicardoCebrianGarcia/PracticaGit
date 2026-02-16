@@ -1,14 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Practicando con Git</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    Esto es un archivo simple de HTML
+﻿<!DOCTYPE html> <html lang="es"> <head>
+    <meta charset="UTF-8"> <title>App Gestión Arquitectura</title> </head>
+<body> <div id="encabezado"> <strong>ARCHI-MANAGER V1.0</strong> <br>
+        <small>Panel de control para arquitectos en Madrid</small> <hr> </div>
+
+    <div id="menu">
+        <p>Menú de Navegación:</p>
+        <ul> <li><a href="#tablero">Tablero de Proyectos</a></li> <li><a href="#nuevo">Nuevo Ingreso</a></li>
+            <li><a href="#recursos">Recursos Externos</a></li>
+        </ul>
+        <hr>
+    </div>
+
+    <div id="tablero">
+        <h3>Estado de Proyectos Activos</h3>
+        
+        <table border="1"> <caption>Proyectos en curso - T1 2025</caption> <thead> <tr>
+                    <th>ID</th> <th>Cliente</th>
+                    <th>Ubicación</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody> <tr>
+                    <td>001</td> <td>Familia García</td>
+                    <td>Pozuelo</td>
+                    <td><mark>En Diseño</mark></td> <td><button>Ver Detalles</button></td> </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Empresa Tech SL</td>
+                    <td>Alcobendas</td>
+                    <td>En Obra</td>
+                    <td><button>Ver Detalles</button></td>
+                </tr>
+            </tbody>
+            <tfoot> <tr>
+                    <td colspan="5">Total de proyectos listados: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+
+    <div id="nuevo">
+        <h3>Registrar Nuevo Proyecto</h3>
+        
+        <form> <fieldset> <legend>Datos Técnicos</legend> <label for="nombre_p">Nombre del Proyecto:</label> <input type="text" id="nombre_p" placeholder="Ej: Loft Centro"> <br><br>
+
+                <label for="tipo">Tipología:</label>
+                <select id="tipo"> <option>Residencial</option> <option>Comercial</option>
+                    <option>Urbanismo</option>
+                </select>
+                <br><br>
+
+                <label>Fecha de inicio:</label>
+                <input type="date"> <br><br>
+
+                <label>Notas preliminares:</label><br>
+                <textarea rows="5" cols="40"></textarea> <br><br>
+
+                <button type="button" onclick="alert('Proyecto guardado en la base de datos')">Guardar Proyecto</button> </fieldset>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+
+    <div id="recursos">
+        <h3>Referencia Catastral / Ubicación</h3>
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.75,40.38,-3.65,40.45&layer=mapnik" 
+            width="400" 
+            height="200">
+        </iframe> <p>
+            <small>Sistema v1.0 - Solo uso interno.</small> </p>
+    </div>
+
 </body>
 </html>
