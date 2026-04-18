@@ -1,1 +1,1 @@
-console.log("Esto es un archivo de JavaScript")
+console.log("William Forero: Este es un ejemplo de JavaScript para usar GitHub");
