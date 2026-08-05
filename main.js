@@ -1,3 +1,3 @@
 console.log("Esto es un archivo de JavaScript")
 
-// Nuevo Comentario
+// Nuevo Comentario en JavaScript
